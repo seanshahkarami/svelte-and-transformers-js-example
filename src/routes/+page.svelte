@@ -44,7 +44,9 @@
     }
 </script>
 
-<h1>Svelte + Transformers.js Example</h1>
+<h1>Svelte and Transformers.js Example</h1>
+
+<p>Please choose a file you want to run the object detector on.</p>
 
 <div>
     <input type="file" accept="image/png, image/jpeg" bind:files />
@@ -53,7 +55,7 @@
 <div>
     {#if files && files.length > 0}
         {#await classifyImage(files[0])}
-            <h3>Processing image...</h3>
+            <p>Processing image...</p>
         {:then result}
             <svg
                 width="1280"
