@@ -1,5 +1,5 @@
 <script>
-    import { pipeline, Pipeline } from "@xenova/transformers";
+    import { pipeline } from "@xenova/transformers";
 
     /** @type {FileList?} */
     let files;
@@ -22,7 +22,7 @@
         });
     }
 
-    /** @type {Pipeline?} */
+    /** @type {import('@xenova/transformers').Pipeline?} */
     let pipe = null;
 
     async function classifyImage(file) {
