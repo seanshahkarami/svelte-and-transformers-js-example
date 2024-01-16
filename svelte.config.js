@@ -11,5 +11,8 @@ export default {
 			precompress: false,
 			strict: true,
 		}),
+		paths: {
+			base: "/svelte-and-transformers-js-example",
+		}
 	},
 };
