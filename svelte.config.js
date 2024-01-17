@@ -4,15 +4,12 @@ import adapter from '@sveltejs/adapter-static';
 export default {
 	kit: {
 		adapter: adapter({
-			// Output docs/ as output to be more compatible with Github Pages.
-			pages: 'docs',
-			assets: 'docs',
 			fallback: undefined,
 			precompress: false,
 			strict: true,
 		}),
 		paths: {
-			base: "/svelte-and-transformers-js-example",
+			base: '/svelte-and-transformers-js-example',
 		}
 	},
 };
